@@ -1,0 +1,558 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
+@import "variables";
+@import "mixins";
+
+.sb-show-main.sb-main-padded {
+    padding: 0;
+}
+section {
+    padding: 0;
+}
+*,
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgb(236, 246, 250);
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
+}
+.view-container {
+    background-color: rgb(236, 246, 250);
+    min-height: 100vh;
+}
+.action-container {
+    min-height: 100vh;
+    background-color: white;
+}
+
+.nav-header {
+    padding: 0 20px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .app-bar-button:last-child {
+        right: 20px;
+    }
+}
+
+.nav-header-title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.action-body {
+    padding: 24px;
+}
+.confirmation-body {
+    padding: 124px 24px;
+}
+.view-body {
+    padding: 24px;
+}
+.view-body-white {
+    padding: 24px;
+    background-color: white;
+}
+
+.second-body-white {
+    min-height: calc(100vh - 246px);
+    height: auto;
+    background-color: white;
+}
+
+.onboarding-container {
+    padding: 24px 0;
+    height: 100vh;
+    background-color: white;
+}
+.onboarding-slider {
+    padding: 24px 0;
+}
+
+.onboarding-img {
+    margin-top: 44px;
+    width: 100%;
+}
+
+.headline-label {
+    color: $blue;
+    @include bold;
+    font-size: 10px;
+}
+.slider-title {
+    color: $black;
+    @include bold;
+    font-size: 24pt;
+    margin-bottom: 0;
+}
+
+.action-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: white;
+    padding: 24px;
+}
+.slider-text {
+    padding: 0 16px;
+}
+
+.slider-bullets {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.slider-bullet {
+    height: 8px;
+    width: 8px;
+    border: unset;
+    border-radius: 12px;
+    background-color: $gray-2;
+    margin: 0 6px;
+}
+.slider-bullet.active {
+    background-color: $blue;
+}
+
+.btn.cta {
+    font-size: 16px;
+    color: white;
+    @include bold;
+    width: 100%;
+    background-image: linear-gradient(to right, $ligh-orange, $orange);
+    box-shadow: 0 4px 4px rgba(218, 54, 44, 0.3);
+    border: unset;
+    height: 48px;
+    @include radius-12;
+}
+
+.btn-cta-secondary {
+    border: unset;
+    border: transparent;
+    color: $orange;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    &::before {
+        content: "";
+        background-image: linear-gradient(to right, $ligh-orange, $orange);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        z-index: -1;
+        @include radius-12;
+    }
+    &::after {
+        content: "";
+        background-color: white;
+        position: absolute;
+        height: calc(100% - 4px);
+        width: calc(100% - 4px);
+        top: 2px;
+        right: 2px;
+        z-index: 0;
+        z-index: -1;
+        border-radius: 10px;
+    }
+}
+.btn {
+    font-size: 16px;
+    @include bold;
+    padding: 0 16px;
+    height: 48px;
+    display: inline-block;
+}
+
+.btn-secondary {
+    border: unset;
+    border: transparent;
+    color: $orange;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        background-image: linear-gradient(to right, $ligh-orange, $orange);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        z-index: -1;
+        @include radius-12;
+    }
+    &::after {
+        content: "";
+        background-color: white;
+        position: absolute;
+        height: calc(100% - 4px);
+        width: calc(100% - 4px);
+        top: 2px;
+        right: 2px;
+        z-index: 0;
+        z-index: -1;
+        border-radius: 10px;
+    }
+}
+
+.button-container {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 24px 0;
+}
+.text {
+    font-size: 16px;
+    color: $black;
+    line-height: normal;
+}
+.text-small {
+    font-size: 14px;
+    color: $black;
+    line-height: normal;
+}
+.text-smallest {
+    font-size: 12px;
+    color: $black;
+    line-height: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+.medium {
+    font-weight: 500;
+}
+
+.link {
+    color: $blue;
+    text-decoration: none;
+    line-height: 1.1;
+}
+
+.size-11 {
+    font-size: 11px;
+}
+
+.title {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 32px;
+    font-size: 28px;
+    @include bold;
+}
+
+.hero-data-title {
+    color: $success;
+    @include bold;
+    font-size: 36px;
+    line-height: normal;
+}
+.form-label {
+    color: $black;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+.form-check-icon {
+    color: $success;
+    font-size: 16px;
+}
+.form-control {
+    font-size: 16px;
+    border: 1px solid $light-blue;
+    height: 40px;
+    padding: 0 12px;
+    @include regular;
+    @include radius-8;
+    &:focus {
+        outline: 3px solid $light-blue;
+        box-shadow: unset;
+        border-color: $blue;
+    }
+}
+
+.input-compound {
+    display: flex;
+    align-items: center;
+    border: 1px solid $light-blue;
+    height: 40px;
+    @include regular;
+    @include radius-12;
+    overflow: hidden;
+    &.focus {
+        outline: 3px solid $light-blue;
+        border-color: $blue;
+    }
+
+    label {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        @include bold;
+        background-color: $lighter-blue;
+    }
+}
+.input-compound .form-control {
+    border-radius: unset;
+    background-color: white;
+    border-color: transparent;
+    &:focus {
+        background-color: white;
+        border-color: transparent;
+        outline: unset;
+        box-shadow: unset;
+    }
+}
+
+.informational-label {
+    display: flex;
+    align-items: center;
+    color: $gray;
+    font-size: 10px;
+    line-height: normal;
+    margin-top: 8px;
+    img {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.input-with-icon {
+    position: relative;
+}
+.input-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 4px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    img {
+        width: 14px;
+    }
+}
+
+.form-checkbox-container {
+    display: flex;
+    align-items: flex-start;
+}
+.form-checkbox {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: $blue;
+    margin-right: 16px;
+}
+
+/* Hide the browser's default checkbox */
+.form-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: 2px solid $blue;
+    @include radius-6;
+}
+
+/* On mouse-over, add a grey background color */
+.form-checkbox:hover input ~ .checkmark {
+    background-color: $blue;
+    border: unset;
+}
+
+/* When the checkbox is checked, add a blue background */
+.form-checkbox input:checked ~ .checkmark {
+    background-color: $blue;
+    border: unset;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.form-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.form-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.input-groups {
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 32px;
+}
+.app-bar-button {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    background-color: transparent;
+    border: unset;
+    position: absolute;
+}
+
+.regular {
+    @include regular;
+}
+
+.message-box {
+    padding: 16px;
+    border: 1px solid $gray-2;
+    &.success {
+        border-color: $success;
+        border-radius: 8px;
+    }
+    &.failure {
+        border-color: $orange;
+        border-radius: 8px;
+    }
+}
+
+.red {
+    color: $orange;
+}
+.success {
+    color: $success;
+}
+
+.resume-table {
+    padding: 24px 0;
+    border-top: 1px solid $gray-2;
+    border-bottom: 1px solid $gray-2;
+}
+
+.resume-table-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.collapsable-box {
+    background-color: $lighter-blue;
+    @include radius-12;
+    padding: 16px;
+    overflow-y: hidden;
+    margin-bottom: 24px;
+}
+
+.collabable-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapsable-btn {
+    background-color: $blue;
+    color: white;
+    padding: 2px;
+    font-size: 20px;
+    border-radius: 32px;
+    border: none;
+}
+
+.collapsable-content {
+    height: 0;
+    overflow-y: hidden;
+}
+
+.collapsable-box.active .collapsable-content {
+    height: auto;
+}
+
+.collapsable-box .collapsable-btn.active {
+    display: none;
+}
+.collapsable-box.active .collapsable-btn.active {
+    display: block;
+}
+.collapsable-box.active .collapsable-btn.inactive {
+    display: none;
+}
+.divider {
+    margin: 0;
+    background-color: $light-blue;
+}
+
+.bankcard-grid {
+    margin-bottom: 32px;
+    display: flex;
+    column-gap: 8px;
+    img {
+        max-width: 38px;
+    }
+}
+@import "selectable-items";
+@import "margins";
+@import "padding";

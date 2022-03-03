@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1632506208843,
+  "timestamp": 1646274265292,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,13 +11,15 @@
         "ignoreVary": true
       },
       "urls": [
+        "/216.fd541ec49c889f1a9cd3.js",
+        "/913.d2ced9ca30fe3e941fbd.js",
         "/favicon.ico",
         "/index.html",
-        "/main.10b7f2eeb73b7e608243.js",
+        "/main.65db44945b12f186a9ea.js",
         "/manifest.webmanifest",
-        "/polyfills.498e02f1187c9e5afbc7.js",
-        "/runtime.06265c4c1be3db342c6b.js",
-        "/styles.31d6cfe0d16ae931b73c.css"
+        "/polyfills.79ab12961d60e27be342.js",
+        "/runtime.f73357eb42b9f07a6d80.js",
+        "/styles.d49e79e75a1ec5d1dc4c.css"
       ],
       "patterns": []
     },
@@ -36,13 +38,21 @@
         "/assets/icons/icon-384x384.png",
         "/assets/icons/icon-512x512.png",
         "/assets/icons/icon-72x72.png",
-        "/assets/icons/icon-96x96.png"
+        "/assets/icons/icon-96x96.png",
+        "/assets/sass/_margins.scss",
+        "/assets/sass/_mixins.scss",
+        "/assets/sass/_padding.scss",
+        "/assets/sass/_selectable-items.scss",
+        "/assets/sass/_variables.scss",
+        "/assets/sass/main.scss"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
+    "/216.fd541ec49c889f1a9cd3.js": "101b16533844c4e7f41b679b396df476491ac1db",
+    "/913.d2ced9ca30fe3e941fbd.js": "a8e383e7aeab264ed3d1157a4cfa70292e78d216",
     "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -51,13 +61,19 @@
     "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/sass/_margins.scss": "44c33aabca8079aeacaf6478c63602f4c988a0a3",
+    "/assets/sass/_mixins.scss": "b281a246cb70176c41d49bc010ec57a0103ceaec",
+    "/assets/sass/_padding.scss": "597f554e762f5329c3233ed3b810631f9310f9ad",
+    "/assets/sass/_selectable-items.scss": "133ce9e5d995899da6e18ceeb359c6c561b6bf82",
+    "/assets/sass/_variables.scss": "964f8eb6d81847a44ce6efbf1fa386d5afc6c59e",
+    "/assets/sass/main.scss": "bc85f1f0ffa31833cf9a6e5c2aa23c9b10f2cf69",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "4d7bbd90f85439fb6346fb07a61add87cf91ec76",
-    "/main.10b7f2eeb73b7e608243.js": "055dc80961c878f2c5d1db4498e68308be60610b",
+    "/index.html": "dc318f859789968ec5467950081b0d687cefdd16",
+    "/main.65db44945b12f186a9ea.js": "2f9d9ebae020382ab9f747468125f388561af89e",
     "/manifest.webmanifest": "ffc393fce5a06a1f2df44ab86bb0b254da3aeaac",
-    "/polyfills.498e02f1187c9e5afbc7.js": "6ee557e63888791342cdc52fec91eb8c321739c7",
-    "/runtime.06265c4c1be3db342c6b.js": "78c61d5faaee05fec49fe192c4f68dd33b484c24",
-    "/styles.31d6cfe0d16ae931b73c.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "/polyfills.79ab12961d60e27be342.js": "a5877e1730b864d103290a9129440e52e5b0ed84",
+    "/runtime.f73357eb42b9f07a6d80.js": "b101e19ae09f508ae47c06cb28a5caad4f546270",
+    "/styles.d49e79e75a1ec5d1dc4c.css": "ad6736e29c5a4c010dc91ba0eb2ac214ae72ed65"
   },
   "navigationUrls": [
     {
