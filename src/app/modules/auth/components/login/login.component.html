@@ -1,0 +1,83 @@
+<section class="action-container">
+  <div class="action-header">
+    <button routerLink="/auth" class="app-bar-button">
+      <img
+        src="https://tedwaffl.sirv.com/Activa/arrow_back_ios_new_black_24dp(1).svg"
+        alt=""
+      />
+    </button>
+  </div>
+  <form [formGroup]="loginForm" (submit)="doLogin($event)" class="action-body">
+    <div class="mb-28">
+      <img
+        src="https://tedwaffl.sirv.com/Activa/activaLogo.svg"
+        alt="Branding"
+        class="small-logo"
+      />
+    </div>
+    <div class="message-box success mb-32">
+      <span class="material-icons-outlined form-check-icon mb-12">
+        check_circle
+      </span>
+      <p class="text mb-0">
+        Te hemos enviado un mensaje a tu correo
+        <b>carlos.perez@gmail.com</b>
+        con las instrucciones para reestablecer tu contraseña. Por favor revisa
+        la bandeja de entrada o el spam de tu correo.
+      </p>
+    </div>
+    <h1 class="title">Iniciar sesión</h1>
+    <div class="mb-24">
+      <div class="form-label">
+        <label for="email">Correo electrónico:</label>
+      </div>
+      <input type="email"
+             formControlName="email"
+             class="form-control"
+             id="email"/>
+    </div>
+    <div class="mb-24">
+      <div class="form-label">
+        <label for="password" class="">Contraseña:</label>
+        <span class="material-icons form-check-icon ml-4">check_circle</span>
+        <a class="link ms-auto">¿Olvidaste tu contraseña?</a>
+      </div>
+      <div class="input-with-icon">
+        <input [type]="showPass ? 'text': 'password'"
+               formControlName="password"
+               class="form-control"
+               id="password"/>
+        <button (click)="showPass = !showPass" class="password-icon input-icon">
+          <img src="https://tedwaffl.sirv.com/Activa/see.svg" alt=""/>
+        </button>
+      </div>
+      <div class="informational-label">
+        <img
+          src="https://tedwaffl.sirv.com/Activa/information-i.svg"
+          class="mr-6"
+          alt=""
+        />
+        Correo electrónico registrado en tu contrato
+      </div>
+    </div>
+    <div class="form-checkbox-container mb-24">
+      <label class="form-checkbox">
+        <input type="checkbox"/>
+        <span class="checkmark"></span>
+      </label>
+      Por favor, seleccione esta casilla si el contrato está a su nombre.
+    </div>
+    <button type="submit"
+            [disabled]="loginForm.invalid"
+            class="btn cta mb-20">
+      Iniciar sesión
+    </button>
+    <div>
+      <a href="#" class="link">
+        Eres nuevo en Activa?
+        <br class="d-block"/>
+        Regístrate.
+      </a>
+    </div>
+  </form>
+</section>

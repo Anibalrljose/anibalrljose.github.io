@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import {AppRoutingModule} from './app.routing.module';
+import {SharedModule} from './modules/shared/shared.module';
+import {SecurityGuard} from './security/security.guard';
 
 @NgModule({
   declarations: [
@@ -11,6 +14,8 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
+    SharedModule,
+    AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
@@ -18,7 +23,9 @@ import { environment } from '../environments/environment';
       registrationStrategy: 'registerWhenStable:30000'
     })
   ],
-  providers: [],
+  providers: [
+    SecurityGuard,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
