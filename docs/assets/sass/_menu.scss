@@ -1,0 +1,55 @@
+.sidemenu-item {
+    background-color: transparent;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $gray-2;
+    cursor: pointer;
+    button {
+        position: relative;
+        padding: 0;
+        border: unset;
+        background-color: transparent;
+        font-size: 24px;
+        color: $gray;
+        margin-left: auto;
+    }
+
+    &.alternative {
+        border-bottom: unset;
+        padding: 8px 0;
+    }
+
+    &:last-child {
+        border-bottom: unset;
+    }
+}
+
+.sidemenu-item-img {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $lighter-blue;
+    @include radius-12;
+    img {
+        width: 16px;
+    }
+    &.failure {
+        background-color: $light-red;
+    }
+
+    &.regular {
+        background-color: $light-gray;
+    }
+
+    &.warning {
+        background-color: $lighter-orange;
+    }
+}
+
+.sidemenu-item-text {
+    color: $black;
+    margin-left: 16px;
+}

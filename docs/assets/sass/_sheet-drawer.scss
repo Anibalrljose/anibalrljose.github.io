@@ -1,0 +1,117 @@
+.sheet-drawer {
+    background-color: white;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 0 24px;
+    width: 100%;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: calc(100% - 17.5%);
+    overflow: hidden;
+    padding-bottom: 256px;
+    z-index: 999;
+}
+
+.sheet-drawer.active {
+    top: 17.5%;
+    overflow-y: auto;
+}
+
+.sheet-drawer-header {
+    background-color: white;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.sheet-drawer-input {
+    text-align: center;
+    border-color: $gray-2;
+    margin-bottom: 16px;
+}
+
+.service-item {
+    background-color: $lighter-blue;
+    @include radius-8;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    button {
+        position: relative;
+        padding: 0;
+        border: unset;
+        background-color: transparent;
+        font-size: 24px;
+        color: $gray;
+        margin-left: auto;
+    }
+}
+
+.service-item-title {
+    font-size: 18px;
+    @include bold;
+    display: block;
+}
+
+.service-item-data {
+    font-weight: 500;
+}
+
+.drawer-button {
+    width: 120px;
+    margin: 0 auto 12px;
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    height: 8px;
+    background-color: transparent;
+    hr {
+        margin: 0;
+        background-color: $gray-2;
+        border-radius: 8px;
+        opacity: 1;
+        height: 4px;
+    }
+}
+
+.profile-picture {
+    position: relative;
+    display: inline-block;
+}
+.profile-picture-container {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    border-radius: 64px;
+    overflow: hidden;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    img {
+        height: 100%;
+        border-radius: 64px;
+        margin: auto;
+        display: block;
+    }
+}
+
+.profile-button {
+    position: absolute;
+    outline: unset;
+    border: unset;
+    padding: 0;
+    background-color: transparent;
+    line-height: normal;
+    bottom: 9px;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    right: -12px;
+}

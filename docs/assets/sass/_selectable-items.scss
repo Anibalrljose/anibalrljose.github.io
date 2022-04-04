@@ -123,3 +123,24 @@
     @include radius-12;
     outline: 3px solid $light-blue;
 }
+
+.selectable-items-alt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 16px;
+}
+
+.selectable-item-alt {
+    padding: 8px 16px;
+    @include radius-12;
+    font-size: 16px;
+    @include bold;
+    color: $black;
+    background-color: $light-gray;
+    margin: 0 8px;
+    &.selected {
+        background-color: $blue;
+        color: white;
+    }
+}

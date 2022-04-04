@@ -1,0 +1,51 @@
+.resume-table {
+    padding: 24px 0;
+    border-top: 1px solid $gray-2;
+    border-bottom: 1px solid $gray-2;
+}
+
+.resume-table-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.resume-table-alternative {
+    padding: 24px 0;
+}
+
+.resume-table-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.cart-table {
+    background-color: $lighter-blue;
+    padding: 16px 16px;
+    margin-bottom: 24px;
+    @include radius-12;
+}
+
+.cart-table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+}
+.cart-table-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+    span {
+        display: flex;
+        align-items: center;
+    }
+}
